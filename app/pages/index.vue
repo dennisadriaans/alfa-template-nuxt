@@ -587,7 +587,7 @@ function setColorMode() {
     >
       <div class="flex items-center">
         <div class="flex items-center gap-2">
-          <div class="w-4 h-4 bg-(--ui-bg-elevated)/50 ring ring-(--ui-border)"></div>
+          <div class="w-3 h-3 rounded-xs bg-white"></div>
           <div class="text-xl tracking-tighter">Dashboard Alfa</div>
         </div>
 
@@ -659,7 +659,7 @@ function setColorMode() {
         <h2 class="text-2xl font-bold">Nuxt Admin Dashboard 👋</h2>
       </div>
 
-      <div class="my-6 border-b border-(--ui-border) space-y-4 space-x-2">
+      <div class="mt-8 mb-4 border-b border-(--ui-border) space-y-4 space-x-2">
         <UButton active icon="i-lucide-chart-line" size="md" color="neutral" variant="ghost" active-variant="subtle">Data</UButton>
         <UButton icon="i-lucide-code-xml" size="md" color="neutral" variant="ghost">Code</UButton>
         <UButton icon="i-lucide-settings" size="md" color="neutral" variant="ghost">Settings</UButton>
