@@ -564,9 +564,9 @@ const GeminiData = [
 ];
 
 const categories: Record<string, BulletLegendItemInterface> = {
-  'Sonnet 3.7': { name: 'Sonnet 3.7', color: '#00dc82' },
-  'GPT-4o': { name: 'GPT-4o', color: '#e06f52' },
-  'Flash 2.0': { name: 'Flash 2.0', color: '#73a2c6' }
+  'Sonnet 3.7': { name: 'Sonnet 3.7', color: '#3b82f6' },
+  'GPT-4o': { name: 'GPT-4o', color: '#d946ef' },
+  'Flash 2.0': { name: 'Flash 2.0', color: '#8b5cf6' }
 }
 
 const InvestmentData = [
@@ -1008,7 +1008,7 @@ function formatDate(timestamp: number) {
           :pagination-poisition="PaginationPosition.Bottom"
           :categories="categories"
           :y-num-ticks="8"
-          :x-formatter="(i: number): string => `${InvestmentData[i].date}`"
+          :x-formatter="(i: number): string => `${InvestmentData[i]?.date}`"
           :curve-type="CurveType.MonotoneX"
         />
       </UCard>
