@@ -8,7 +8,7 @@
 :root {
   --ui-bg: oklch(100 0 0);
   --ui-card: oklch(100 0 0);
-  --side-bar-width: 240px;
+  --side-bar-width: 280px;
 }
 
 .dark {

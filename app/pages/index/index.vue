@@ -1,8 +1,14 @@
 <script lang="ts" setup>
-import { BarChart, LineChart, type BulletLegendItemInterface, CurveType, PaginationPosition } from "vue-chrts";
+import {
+  BarChart,
+  LineChart,
+  type BulletLegendItemInterface,
+  CurveType,
+  PaginationPosition,
+} from "vue-chrts";
 
 const LLMFields = {
-  total_tokens: { name: "Tokens", color: "#00dc82" },
+  total_tokens: { name: "Tokens", color: "#00DC82" },
 };
 
 const items = ref(["Backlog", "Todo", "In Progress", "Done"]);
@@ -564,353 +570,353 @@ const GeminiData = [
 ];
 
 const categories: Record<string, BulletLegendItemInterface> = {
-  'Sonnet 3.7': { name: 'Sonnet 3.7', color: '#3b82f6' },
-  'GPT-4o': { name: 'GPT-4o', color: '#d946ef' },
-  'Flash 2.0': { name: 'Flash 2.0', color: '#8b5cf6' }
-}
+  "Sonnet 3.7": { name: "Sonnet 3.7", color: "#00DC82" },
+  "GPT-4o": { name: "GPT-4o", color: "#41B883" },
+  "Gemini 2.5 Pro": { name: "Gemini 2.5 Pro", color: "#34495E" },
+};
 
 const InvestmentData = [
   {
     date: "Aug 01",
     "Sonnet 3.7": 2100.2,
     "GPT-4o": 4434.1,
-    "Flash 2.0": 7943.2,
+    "Gemini 2.5 Pro": 7943.2,
   },
   {
     date: "Aug 02",
     "Sonnet 3.7": 2943.0,
     "GPT-4o": 4954.1,
-    "Flash 2.0": 8954.1,
+    "Gemini 2.5 Pro": 8954.1,
   },
   {
     date: "Aug 03",
     "Sonnet 3.7": 4889.5,
     "GPT-4o": 6100.2,
-    "Flash 2.0": 9123.7,
+    "Gemini 2.5 Pro": 9123.7,
   },
   {
     date: "Aug 04",
     "Sonnet 3.7": 3909.8,
     "GPT-4o": 4909.7,
-    "Flash 2.0": 7478.4,
+    "Gemini 2.5 Pro": 7478.4,
   },
   {
     date: "Aug 05",
     "Sonnet 3.7": 5778.7,
     "GPT-4o": 7103.1,
-    "Flash 2.0": 9504.3,
+    "Gemini 2.5 Pro": 9504.3,
   },
   {
     date: "Aug 06",
     "Sonnet 3.7": 5900.9,
     "GPT-4o": 7534.3,
-    "Flash 2.0": 9943.4,
+    "Gemini 2.5 Pro": 9943.4,
   },
   {
     date: "Aug 07",
     "Sonnet 3.7": 4129.4,
     "GPT-4o": 7412.1,
-    "Flash 2.0": 10112.2,
+    "Gemini 2.5 Pro": 10112.2,
   },
   {
     date: "Aug 08",
     "Sonnet 3.7": 6021.2,
     "GPT-4o": 7834.4,
-    "Flash 2.0": 10290.2,
+    "Gemini 2.5 Pro": 10290.2,
   },
   {
     date: "Aug 09",
     "Sonnet 3.7": 6279.8,
     "GPT-4o": 8159.1,
-    "Flash 2.0": 10349.6,
+    "Gemini 2.5 Pro": 10349.6,
   },
   {
     date: "Aug 10",
     "Sonnet 3.7": 6224.5,
     "GPT-4o": 8260.6,
-    "Flash 2.0": 10415.4,
+    "Gemini 2.5 Pro": 10415.4,
   },
   {
     date: "Aug 11",
     "Sonnet 3.7": 6380.6,
     "GPT-4o": 8965.3,
-    "Flash 2.0": 10636.3,
+    "Gemini 2.5 Pro": 10636.3,
   },
   {
     date: "Aug 12",
     "Sonnet 3.7": 6414.4,
     "GPT-4o": 7989.3,
-    "Flash 2.0": 10900.5,
+    "Gemini 2.5 Pro": 10900.5,
   },
   {
     date: "Aug 13",
     "Sonnet 3.7": 6540.1,
     "GPT-4o": 7839.6,
-    "Flash 2.0": 11040.4,
+    "Gemini 2.5 Pro": 11040.4,
   },
   {
     date: "Aug 14",
     "Sonnet 3.7": 6634.4,
     "GPT-4o": 7343.8,
-    "Flash 2.0": 11390.5,
+    "Gemini 2.5 Pro": 11390.5,
   },
   {
     date: "Aug 15",
     "Sonnet 3.7": 7124.6,
     "GPT-4o": 6903.7,
-    "Flash 2.0": 11423.1,
+    "Gemini 2.5 Pro": 11423.1,
   },
   {
     date: "Aug 16",
     "Sonnet 3.7": 7934.5,
     "GPT-4o": 6273.6,
-    "Flash 2.0": 12134.4,
+    "Gemini 2.5 Pro": 12134.4,
   },
   {
     date: "Aug 17",
     "Sonnet 3.7": 10287.8,
     "GPT-4o": 5900.3,
-    "Flash 2.0": 12034.4,
+    "Gemini 2.5 Pro": 12034.4,
   },
   {
     date: "Aug 18",
     "Sonnet 3.7": 10323.2,
     "GPT-4o": 5732.1,
-    "Flash 2.0": 11011.7,
+    "Gemini 2.5 Pro": 11011.7,
   },
   {
     date: "Aug 19",
     "Sonnet 3.7": 10511.4,
     "GPT-4o": 5523.1,
-    "Flash 2.0": 11834.8,
+    "Gemini 2.5 Pro": 11834.8,
   },
   {
     date: "Aug 20",
     "Sonnet 3.7": 11043.9,
     "GPT-4o": 5422.3,
-    "Flash 2.0": 12387.1,
+    "Gemini 2.5 Pro": 12387.1,
   },
   {
     date: "Aug 21",
     "Sonnet 3.7": 6700.7,
     "GPT-4o": 5334.2,
-    "Flash 2.0": 11032.2,
+    "Gemini 2.5 Pro": 11032.2,
   },
   {
     date: "Aug 22",
     "Sonnet 3.7": 6900.8,
     "GPT-4o": 4943.4,
-    "Flash 2.0": 10134.2,
+    "Gemini 2.5 Pro": 10134.2,
   },
   {
     date: "Aug 23",
     "Sonnet 3.7": 7934.5,
     "GPT-4o": 4812.1,
-    "Flash 2.0": 9921.2,
+    "Gemini 2.5 Pro": 9921.2,
   },
   {
     date: "Aug 24",
     "Sonnet 3.7": 9021.0,
     "GPT-4o": 2729.1,
-    "Flash 2.0": 10549.8,
+    "Gemini 2.5 Pro": 10549.8,
   },
   {
     date: "Aug 25",
     "Sonnet 3.7": 9198.2,
     "GPT-4o": 2178.0,
-    "Flash 2.0": 10968.4,
+    "Gemini 2.5 Pro": 10968.4,
   },
   {
     date: "Aug 26",
     "Sonnet 3.7": 9557.1,
     "GPT-4o": 2158.3,
-    "Flash 2.0": 11059.1,
+    "Gemini 2.5 Pro": 11059.1,
   },
   {
     date: "Aug 27",
     "Sonnet 3.7": 9959.8,
     "GPT-4o": 2100.8,
-    "Flash 2.0": 11903.6,
+    "Gemini 2.5 Pro": 11903.6,
   },
   {
     date: "Aug 28",
     "Sonnet 3.7": 10034.6,
     "GPT-4o": 2934.4,
-    "Flash 2.0": 12143.3,
+    "Gemini 2.5 Pro": 12143.3,
   },
   {
     date: "Aug 29",
     "Sonnet 3.7": 10243.8,
     "GPT-4o": 3223.4,
-    "Flash 2.0": 12930.1,
+    "Gemini 2.5 Pro": 12930.1,
   },
   {
     date: "Aug 30",
     "Sonnet 3.7": 10078.5,
     "GPT-4o": 3779.1,
-    "Flash 2.0": 13420.5,
+    "Gemini 2.5 Pro": 13420.5,
   },
   {
     date: "Aug 31",
     "Sonnet 3.7": 11134.6,
     "GPT-4o": 4190.3,
-    "Flash 2.0": 14443.2,
+    "Gemini 2.5 Pro": 14443.2,
   },
   {
     date: "Sep 01",
     "Sonnet 3.7": 12347.2,
     "GPT-4o": 4839.1,
-    "Flash 2.0": 14532.1,
+    "Gemini 2.5 Pro": 14532.1,
   },
   {
     date: "Sep 02",
     "Sonnet 3.7": 12593.8,
     "GPT-4o": 5153.3,
-    "Flash 2.0": 14283.5,
+    "Gemini 2.5 Pro": 14283.5,
   },
   {
     date: "Sep 03",
     "Sonnet 3.7": 12043.4,
     "GPT-4o": 5234.8,
-    "Flash 2.0": 14078.9,
+    "Gemini 2.5 Pro": 14078.9,
   },
   {
     date: "Sep 04",
     "Sonnet 3.7": 12144.9,
     "GPT-4o": 5478.4,
-    "Flash 2.0": 13859.7,
+    "Gemini 2.5 Pro": 13859.7,
   },
   {
     date: "Sep 05",
     "Sonnet 3.7": 12489.5,
     "GPT-4o": 5741.1,
-    "Flash 2.0": 13539.2,
+    "Gemini 2.5 Pro": 13539.2,
   },
   {
     date: "Sep 06",
     "Sonnet 3.7": 12748.7,
     "GPT-4o": 6743.9,
-    "Flash 2.0": 13643.2,
+    "Gemini 2.5 Pro": 13643.2,
   },
   {
     date: "Sep 07",
     "Sonnet 3.7": 12933.2,
     "GPT-4o": 7832.8,
-    "Flash 2.0": 14629.2,
+    "Gemini 2.5 Pro": 14629.2,
   },
   {
     date: "Sep 08",
     "Sonnet 3.7": 13028.8,
     "GPT-4o": 8943.2,
-    "Flash 2.0": 13611.2,
+    "Gemini 2.5 Pro": 13611.2,
   },
   {
     date: "Sep 09",
     "Sonnet 3.7": 13412.4,
     "GPT-4o": 9932.2,
-    "Flash 2.0": 12515.2,
+    "Gemini 2.5 Pro": 12515.2,
   },
   {
     date: "Sep 10",
     "Sonnet 3.7": 13649.0,
     "GPT-4o": 10139.2,
-    "Flash 2.0": 11143.8,
+    "Gemini 2.5 Pro": 11143.8,
   },
   {
     date: "Sep 11",
     "Sonnet 3.7": 13748.5,
     "GPT-4o": 10441.2,
-    "Flash 2.0": 8929.2,
+    "Gemini 2.5 Pro": 8929.2,
   },
   {
     date: "Sep 12",
     "Sonnet 3.7": 13148.1,
     "GPT-4o": 10933.8,
-    "Flash 2.0": 8943.2,
+    "Gemini 2.5 Pro": 8943.2,
   },
   {
     date: "Sep 13",
     "Sonnet 3.7": 12839.6,
     "GPT-4o": 11073.4,
-    "Flash 2.0": 7938.3,
+    "Gemini 2.5 Pro": 7938.3,
   },
   {
     date: "Sep 14",
     "Sonnet 3.7": 12428.2,
     "GPT-4o": 11128.3,
-    "Flash 2.0": 7533.4,
+    "Gemini 2.5 Pro": 7533.4,
   },
   {
     date: "Sep 15",
     "Sonnet 3.7": 12012.8,
     "GPT-4o": 11412.3,
-    "Flash 2.0": 7100.4,
+    "Gemini 2.5 Pro": 7100.4,
   },
   {
     date: "Sep 16",
     "Sonnet 3.7": 11801.3,
     "GPT-4o": 10501.1,
-    "Flash 2.0": 6532.1,
+    "Gemini 2.5 Pro": 6532.1,
   },
   {
     date: "Sep 17",
     "Sonnet 3.7": 10102.9,
     "GPT-4o": 8923.3,
-    "Flash 2.0": 4332.8,
+    "Gemini 2.5 Pro": 4332.8,
   },
   {
     date: "Sep 18",
     "Sonnet 3.7": 12132.5,
     "GPT-4o": 10212.1,
-    "Flash 2.0": 7847.4,
+    "Gemini 2.5 Pro": 7847.4,
   },
   {
     date: "Sep 19",
     "Sonnet 3.7": 12901.1,
     "GPT-4o": 10101.7,
-    "Flash 2.0": 7223.3,
+    "Gemini 2.5 Pro": 7223.3,
   },
   {
     date: "Sep 20",
     "Sonnet 3.7": 13132.6,
     "GPT-4o": 12132.3,
-    "Flash 2.0": 6900.2,
+    "Gemini 2.5 Pro": 6900.2,
   },
   {
     date: "Sep 21",
     "Sonnet 3.7": 14132.2,
     "GPT-4o": 13212.5,
-    "Flash 2.0": 5932.2,
+    "Gemini 2.5 Pro": 5932.2,
   },
   {
     date: "Sep 22",
     "Sonnet 3.7": 14245.8,
     "GPT-4o": 12163.4,
-    "Flash 2.0": 5577.1,
+    "Gemini 2.5 Pro": 5577.1,
   },
   {
     date: "Sep 23",
     "Sonnet 3.7": 14328.3,
     "GPT-4o": 10036.1,
-    "Flash 2.0": 5439.2,
+    "Gemini 2.5 Pro": 5439.2,
   },
   {
     date: "Sep 24",
     "Sonnet 3.7": 14949.9,
     "GPT-4o": 8985.1,
-    "Flash 2.0": 4463.1,
+    "Gemini 2.5 Pro": 4463.1,
   },
   {
     date: "Sep 25",
     "Sonnet 3.7": 15967.5,
     "GPT-4o": 9700.1,
-    "Flash 2.0": 4123.2,
+    "Gemini 2.5 Pro": 4123.2,
   },
   {
     date: "Sep 26",
     "Sonnet 3.7": 17349.3,
     "GPT-4o": 10943.4,
-    "Flash 2.0": 3935.1,
+    "Gemini 2.5 Pro": 3935.1,
   },
 ];
 
@@ -940,8 +946,8 @@ function formatDate(timestamp: number) {
       </div>
     </div>
 
-    <div class="grid grid-cols-3 gap-4">
-      <UCard variant="subtle">
+    <div class="grid grid-cols-12 gap-4">
+      <UCard variant="subtle" class="col-span-4">
         <h2 class="text-xl dark:text-white my-2 font-medium">Sonnet 3.7</h2>
 
         <div class="flex items-baseline gap-2 justify-start space-y-1 mb-4">
@@ -960,7 +966,7 @@ function formatDate(timestamp: number) {
         />
       </UCard>
 
-      <UCard variant="subtle">
+      <UCard variant="subtle" class="col-span-4">
         <h2 class="text-xl dark:text-white my-2 font-medium">GPT-4o</h2>
 
         <div class="flex items-baseline gap-2 justify-start space-y-1 mb-4">
@@ -978,8 +984,8 @@ function formatDate(timestamp: number) {
           :x-formatter="(i: number): string => formatDate(OpenAIData[i].timestamp)"
         />
       </UCard>
-      <UCard variant="subtle">
-        <h2 class="text-xl dark:text-white my-2 font-medium">Flash 2.0</h2>
+      <UCard variant="subtle" class="col-span-4">
+        <h2 class="text-xl dark:text-white my-2 font-medium">Gemini 2.5 Pro</h2>
 
         <div class="flex items-baseline gap-2 justify-start space-y-1 mb-4">
           <h4 class="text-neutral-500 text-sm">Total Tokens: 2,381</h4>
@@ -996,10 +1002,8 @@ function formatDate(timestamp: number) {
           :x-formatter="(i: number): string => formatDate(GeminiData[i].timestamp)"
         />
       </UCard>
-    </div>
 
-    <div class="flex gap-4">
-      <UCard variant="subtle" class="w-1/2">
+      <UCard variant="subtle" class="col-span-6">
         <h2 class="text-xl dark:text-white my-2 font-medium">Daily Requests</h2>
 
         <LineChart
@@ -1012,7 +1016,7 @@ function formatDate(timestamp: number) {
           :curve-type="CurveType.MonotoneX"
         />
       </UCard>
-      <UCard variant="subtle" class="w-1/2">
+      <UCard variant="subtle" class="col-span-6">
         <h2 class="text-xl dark:text-white my-2 font-medium">Top Users</h2>
         <DataTable />
       </UCard>

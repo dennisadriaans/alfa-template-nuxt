@@ -2,8 +2,8 @@
 const colorMode = useColorMode();
 const route = useRoute();
 
-const items = ref(["Backlog", "Todo", "In Progress", "Done"]);
-const value = ref("Backlog");
+const items = ref(["Dennis Adriaansen", "Todo", "In Progress", "Done"]);
+const value = ref("Dennis Adriaansen");
 
 const isDark = computed(() => colorMode.value === "dark");
 
@@ -15,52 +15,17 @@ function setColorMode() {
   <UApp>
     <NuxtLoadingIndicator />
 
-    <div
-      class="w-full h-16 fixed flex items-center justify-between left-0 top-0 bg-card border-b border-(--ui-border) px-6"
+    <aside
+      class="max-w-(--side-bar-width) w-full h-screen fixed left-0 top-0 bg-card border-r border-(--ui-border)"
     >
-      <div class="flex items-center">
-        <div class="flex items-center gap-2">
-          <div class="w-3 h-3 rounded-xs bg-white"></div>
-          <div class="text-xl tracking-tighter">Dashboard Alfa</div>
-        </div>
+      <nav class="p-4 space-y-8">
+        <header class="flex items-center justify-center gap-2 mt-4">
+          <span class="w-3 h-3 rounded-xs bg-white"></span>
+          <h1 class="text-xl tracking-tighter">Dashboard Alfa</h1>
+        </header>
 
-        <div class="flex items-center gap-2 ml-20 text-neutral-500">
-          <UButton
-            color="neutral"
-            variant="ghost"
-            icon="i-lucide-chart-no-axes-column"
-            >Usage</UButton
-          >
-          <div>/</div>
-          <USelect
-            v-model="value"
-            :items="items"
-            variant="subtle"
-            color="neutral"
-            size="sm"
-            class="ml-2"
-          />
-        </div>
-      </div>
-      <div class="flex items-center gap-4">
-        <UIcon
-          name="i-lucide-moon-star"
-          class="cursor-pointer"
-          size="18"
-          @click="setColorMode"
-        />
-        <!-- <UIcon
-          name="i-lucide-circle-user-round"
-          size="18"
-          class="cursor-pointer"
-        /> -->
-      </div>
-    </div>
+        <USelect v-model="value" :items="items" class="w-full" />
 
-    <div
-      class="max-w-(--side-bar-width) w-full h-screen fixed left-0 top-16 bg-card border-r border-(--ui-border)"
-    >
-      <div class="p-4">
         <NuxtLink to="/">
           <UButton
             color="neutral"
@@ -91,13 +56,13 @@ function setColorMode() {
             >Models</UButton
           >
         </NuxtLink>
-      </div>
-    </div>
+      </nav>
+    </aside>
 
-    <div
-      class="w-[calc(100%-var(--side-bar-width))] mt-16 p-8 ml-(--side-bar-width)"
+    <main
+      class="w-[calc(100%-var(--side-bar-width))] p-8 ml-(--side-bar-width)"
     >
       <NuxtPage />
-    </div>
+    </main>
   </UApp>
 </template>
