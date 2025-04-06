@@ -20,8 +20,10 @@ function setColorMode() {
     >
       <nav class="p-4 space-y-8">
         <header class="flex items-center justify-center gap-2 mt-4">
-          <span class="w-3 h-3 rounded-xs bg-white"></span>
-          <h1 class="text-xl tracking-tighter">Dashboard Alfa</h1>
+          <div class="bg-(--ui-bg-muted) rounded-full p-2.5 -ml-2">
+            <div class="w-2 h-2 rounded-xs bg-white"></div>
+          </div>
+          <h1 class="text-xl">Dashboard Alfa</h1>
         </header>
 
         <USelect v-model="value" :items="items" class="w-full" />
