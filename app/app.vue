@@ -18,8 +18,8 @@ function setColorMode() {
     <aside
       class="max-w-(--side-bar-width) w-full h-screen fixed left-0 top-0 bg-card border-r border-(--ui-border)"
     >
-      <nav class="p-4 space-y-8">
-        <header class="flex items-center justify-center gap-2 mt-4">
+      <nav class="h-full p-4 space-y-8">
+        <header class="flex items-center justify-start gap-2 mt-4 px-4">
           <div class="bg-(--ui-bg-muted) rounded-full p-2.5 -ml-2">
             <div class="w-2 h-2 rounded-xs bg-white"></div>
           </div>
@@ -28,36 +28,18 @@ function setColorMode() {
 
         <USelect v-model="value" :items="items" class="w-full" />
 
-        <NuxtLink to="/">
-          <UButton
-            color="neutral"
-            variant="ghost"
-            size="lg"
-            class="w-full"
-            icon="i-lucide-house"
-            >Dashboard</UButton
-          >
-        </NuxtLink>
-        <NuxtLink to="/users">
-          <UButton
-            color="neutral"
-            variant="ghost"
-            size="lg"
-            class="w-full"
-            icon="i-lucide-users"
-            >Users</UButton
-          >
-        </NuxtLink>
-        <NuxtLink to="/models">
-          <UButton
-            color="neutral"
-            variant="ghost"
-            size="lg"
-            class="w-full"
-            icon="i-lucide-share-2"
-            >Models</UButton
-          >
-        </NuxtLink>
+        <div>
+          <div class="mb-2 text-sm text-(--ui-text-muted)">Menu</div>
+
+          <MenuItem to="/" icon="i-lucide-house" label="Dashboard" />
+          <MenuItem to="/users" icon="i-lucide-users" label="Users" />
+          <MenuItem to="/models" icon="i-lucide-share-2" label="Models" />
+        </div>
+
+        <div class="absolute left-0 bottom-0 p-4 w-full">
+          <MenuItem to="/settings" icon="i-lucide-share-2" label="Settings" />
+          <MenuItem to="/auth/reset" icon="i-lucide-log-out" label="Log out" />
+        </div>
       </nav>
     </aside>
 

@@ -59,7 +59,7 @@ const columns: TableColumn<User>[] = [
 </script>
 
 <template>
-  <div class="space-y-4">
+  <div class="space-y-8">
     <div class="flex items-center justify-between">
       <div class="space-y-1">
         <h2 class="text-2xl font-bold">Users</h2>

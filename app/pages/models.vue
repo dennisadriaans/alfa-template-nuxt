@@ -2,7 +2,7 @@
 const isList = ref(false);
 </script>
 <template>
-  <section class="space-y-4">
+  <section class="space-y-8">
     <header class="flex items-center justify-between">
       <div class="space-y-1">
         <h2 class="text-2xl font-bold">Models</h2>
@@ -28,7 +28,7 @@ const isList = ref(false);
       </nav>
     </header>
 
-    <div class="grid gap-4" :class="isList ? 'grid-cols-1' : 'grid-cols-5'">
+    <div class="grid gap-4" :class="isList ? 'grid-cols-1' : 'grid-cols-4'">
       <UCard variant="subtle">
         <template #header>
           <header class="flex items-center justify-between">

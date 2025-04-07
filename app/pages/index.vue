@@ -1,10 +1,17 @@
 <script lang="ts" setup>
 const route = useRoute();
+const searchQuery = ref("");
 </script>
 <template>
   <div>
     <div class="flex items-center justify-between">
       <h2 class="text-2xl font-bold">Nuxt Admin Dashboard 👋</h2>
+      <UInput
+        v-model="searchQuery"
+        placeholder="Search..."
+        icon="i-heroicons-magnifying-glass"
+        class="w-full sm:w-64"
+      />
     </div>
 
     <div

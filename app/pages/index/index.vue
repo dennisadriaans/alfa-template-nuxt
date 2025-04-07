@@ -94,7 +94,7 @@ function formatDate(timestamp?: number | string) {
 }
 </script>
 <template>
-  <div class="space-y-4">
+  <div class="space-y-8">
     <div class="flex items-center justify-between">
       <div class="flex items-center gap-4">
         <USelect
