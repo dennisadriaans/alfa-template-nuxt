@@ -29,8 +29,8 @@ const value = ref("30 days");
 </script>
 <template>
   <div class="space-y-8">
-    <div class="grid grid-cols-12 gap-4">
-      <UCard variant="subtle" class="col-span-12">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+      <UCard variant="subtle" class="col-span-1 lg:col-span-3">
         <template #header>
           <div class="flex items-center justify-between">
             <div>
@@ -51,16 +51,16 @@ const value = ref("30 days");
         </template>
         <LineChart
           :data="UsageData"
-          :height="400"
+          :height="300"
           :legend-position="LegendPosition.Bottom"
           :categories="categories"
-          :y-num-ticks="8"
+          :y-num-ticks="2"
           :x-formatter="(i: number): string => `${UsageData[i]?.date}`"
           :curve-type="CurveType.MonotoneX"
         />
       </UCard>
 
-      <UCard variant="subtle" class="col-span-4">
+      <UCard variant="subtle" class="col-span-1">
         <h2 class="text-xl my-2 font-medium">Sonnet 3.7</h2>
 
         <div class="flex items-baseline gap-2 justify-start space-y-1 mb-4">
@@ -69,17 +69,18 @@ const value = ref("30 days");
 
         <BarChart
           :data="ClaudeData"
-          :height="250"
+          :height="160"
           :categories="LLMFields"
           :y-axis="['total_tokens']"
           :x-num-ticks="6"
+          :y-num-ticks="4"
           :radius="0"
           :y-formatter="(i: number) => i"
           :x-formatter="(i: number): string => formatDate(ClaudeData[i]?.timestamp)"
         />
       </UCard>
 
-      <UCard variant="subtle" class="col-span-4">
+      <UCard variant="subtle" class="col-span-1">
         <h2 class="text-xl my-2 font-medium">GPT-4o</h2>
 
         <div class="flex items-baseline gap-2 justify-start space-y-1 mb-4">
@@ -88,16 +89,17 @@ const value = ref("30 days");
 
         <BarChart
           :data="OpenAIData"
-          :height="250"
+          :height="160"
           :categories="LLMFields"
           :y-axis="['total_tokens']"
           :x-num-ticks="6"
+          :y-num-ticks="2"
           :radius="0"
           :y-formatter="(i: number) => i"
           :x-formatter="(i: number): string => formatDate(OpenAIData[i]?.timestamp)"
         />
       </UCard>
-      <UCard variant="subtle" class="col-span-4">
+      <UCard variant="subtle" class="col-span-1">
         <h2 class="text-xl my-2 font-medium">Gemini 2.5 Pro</h2>
 
         <div class="flex items-baseline gap-2 justify-start space-y-1 mb-4">
@@ -106,10 +108,11 @@ const value = ref("30 days");
 
         <BarChart
           :data="GeminiData"
-          :height="250"
+          :height="160"
           :categories="LLMFields"
           :y-axis="['total_tokens']"
           :x-num-ticks="6"
+          :y-num-ticks="4"
           :radius="0"
           :y-formatter="(i: number) => i"
           :x-formatter="(i: number): string => formatDate(GeminiData[i]?.timestamp)"

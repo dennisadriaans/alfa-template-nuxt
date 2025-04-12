@@ -15,7 +15,7 @@ function setColorMode() {
     <NuxtLoadingIndicator />
 
     <aside
-      class="max-w-(--side-bar-width) w-full h-screen fixed left-0 top-0 bg-card border-r border-(--ui-border)"
+      class="max-w-(--side-bar-width) w-full h-screen fixed left-0 top-0 bg-card border-r border-(--ui-border)  hidden lg:block"
     >
       <nav class="h-full p-4 space-y-8">
         <header class="flex items-center justify-start gap-2 mt-4 px-4">
@@ -29,6 +29,8 @@ function setColorMode() {
           v-model="value"
           :items="items"
           variant="subtle"
+          trailing-icon="i-lucide-chevrons-up-down"
+          :trailing="true"
           class="w-full mt-1"
         />
 
@@ -48,7 +50,7 @@ function setColorMode() {
     </aside>
 
     <main
-      class="w-[calc(100%-var(--side-bar-width))] p-8 ml-(--side-bar-width)"
+      class="lg:w-[calc(100%-var(--side-bar-width))] p-8 lg:ml-(--side-bar-width)"
     >
       <NuxtPage />
     </main>
