@@ -5,7 +5,9 @@ const searchQuery = ref("");
 <template>
   <div>
     <div class="flex items-center justify-between">
-      <h2 class="text-2xl font-bold">Nuxt Admin Dashboard 👋</h2>
+      <div class="flex">
+        <h2 class="text-2xl font-bold">Nuxt Admin Dashboard 👋</h2>
+      </div>
       <UInput
         v-model="searchQuery"
         placeholder="Search..."
@@ -15,7 +17,7 @@ const searchQuery = ref("");
     </div>
 
     <div
-      class="mt-8 mb-4 pb-4 border-b border-(--ui-border) space-y-4 space-x-2"
+      class="mt-8 mb-4 pb-4 space-y-4 space-x-2"
     >
       <NuxtLink to="/">
         <UButton

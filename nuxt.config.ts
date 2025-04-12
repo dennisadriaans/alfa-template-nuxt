@@ -10,7 +10,8 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxt/scripts',
-    '@nuxt/ui'
+    '@nuxt/ui',
+    'nuxt-charts'
   ],
   css: ['~/assets/css/main.css'],
 })

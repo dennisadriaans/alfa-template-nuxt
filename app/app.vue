@@ -1,8 +1,7 @@
 <script lang="ts" setup>
 const colorMode = useColorMode();
-const route = useRoute();
 
-const items = ref(["Dennis Adriaansen", "Todo", "In Progress", "Done"]);
+const items = ref(["Dennis Adriaansen"]);
 const value = ref("Dennis Adriaansen");
 
 const isDark = computed(() => colorMode.value === "dark");
@@ -21,12 +20,17 @@ function setColorMode() {
       <nav class="h-full p-4 space-y-8">
         <header class="flex items-center justify-start gap-2 mt-4 px-4">
           <div class="bg-(--ui-bg-muted) rounded-full p-2.5 -ml-2">
-            <div class="w-2 h-2 rounded-xs bg-white"></div>
+            <div class="w-2 h-2 rounded-xs bg-(--ui-primary)" />
           </div>
           <h1 class="text-xl">Dashboard Alfa</h1>
         </header>
 
-        <USelect v-model="value" :items="items" class="w-full" />
+        <USelect
+          v-model="value"
+          :items="items"
+          variant="subtle"
+          class="w-full mt-1"
+        />
 
         <div>
           <div class="mb-2 text-sm text-(--ui-text-muted)">Menu</div>
