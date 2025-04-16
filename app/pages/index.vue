@@ -3,8 +3,8 @@ const route = useRoute();
 const searchQuery = ref("");
 </script>
 <template>
-  <div>
-    <div class="flex flex-col lg:flex-row gap-4 mb-6 justify-between">
+  <div class="space-y-8">
+    <div class="flex flex-col lg:flex-row gap-4 justify-between">
       <div class="flex items-center gap-4">
         <h2 class="text-2xl font-bold">Nuxt Admin Dashboard 👋</h2>
       </div>
@@ -17,7 +17,7 @@ const searchQuery = ref("");
     </div>
 
     <!-- <div
-      class="mt-8 mb-2 pb-4 space-y-4 space-x-2 flex items-center justify-start"
+      class="pb-4 space-y-4 space-x-2 flex items-center justify-start"
     >
       <NuxtLink to="/" class="mb-0">
         <UButton
