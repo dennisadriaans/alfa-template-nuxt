@@ -34,9 +34,9 @@ const value = ref("30 days");
         <template #header>
           <div class="flex items-center justify-between">
             <div>
-              <h2 class="text-xl my-2 font-medium">Usage Overview</h2>
+              <h2 class="text-2xl my-2 font-bold">10,291</h2>
               <h4 class="text-sm text-(--ui-text-muted)">
-                Total usage last 30 days
+                Total requests last 30 days
               </h4>
             </div>
             <div>

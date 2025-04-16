@@ -15,7 +15,7 @@ const route = useRoute();
       variant="ghost"
       size="lg"
       class="w-full"
-      :class="route.path === to ? '' : 'text-(--ui-text-dimmed) '"
+      :class="route.path === to ? ' bg-(--ui-bg)' : 'text-(--ui-text-dimmed) hover:text-(--ui-text-muted)'"
       :icon="icon"
       :ui="{
         leadingIcon: `mr-1 text-lg ${

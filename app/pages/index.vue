@@ -4,7 +4,7 @@ const searchQuery = ref("");
 </script>
 <template>
   <div>
-    <div class="flex flex-col lg:flex-row gap-4  justify-between">
+    <div class="flex flex-col lg:flex-row gap-4 mb-6 justify-between">
       <div class="flex items-center gap-4">
         <div class="hidden lg:flex items-center">
           <UIcon name="i-lucide-panel-left-close" :size="20" />
@@ -19,8 +19,8 @@ const searchQuery = ref("");
       />
     </div>
 
-    <div
-      class="mt-8 mb-4 pb-4 space-y-4 space-x-2 flex items-center justify-start"
+    <!-- <div
+      class="mt-8 mb-2 pb-4 space-y-4 space-x-2 flex items-center justify-start"
     >
       <NuxtLink to="/" class="mb-0">
         <UButton
@@ -55,7 +55,7 @@ const searchQuery = ref("");
           >Settings</UButton
         >
       </NuxtLink>
-    </div>
+    </div> -->
 
     <NuxtPage />
   </div>

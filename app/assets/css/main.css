@@ -9,7 +9,7 @@
   --ui-bg: oklch(100 0 0);
   --ui-card: oklch(1 0 0);
   --ui-bg-elevated: oklch(1 0 0);
-  --side-bar-width: 280px;
+  --side-bar-width: 260px;
 }
 
 .dark {
