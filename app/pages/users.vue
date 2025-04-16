@@ -60,12 +60,18 @@ const columns: TableColumn<User>[] = [
 
 <template>
   <div class="space-y-8">
-    <div class="flex items-center justify-between">
-      <div class="space-y-1">
-        <h2 class="text-2xl font-bold">Users</h2>
+    <div>
+        <div class="flex items-center justify-between">
+          <h2 class="text-2xl font-bold">Users</h2>
+          <UInput
+            v-model="searchQuery"
+            placeholder="Search..."
+            icon="i-heroicons-magnifying-glass"
+            class="w-full sm:w-64 hidden lg:block"
+          />
+        </div>
         <p class="text-(--ui-text-muted)">Manage your users</p>
       </div>
-    </div>
     <UCard variant="subtle">
       <DataTable :data="data" :columns="columns" :page-size="20" />
     </UCard>

@@ -6,9 +6,6 @@ const searchQuery = ref("");
   <div>
     <div class="flex flex-col lg:flex-row gap-4 mb-6 justify-between">
       <div class="flex items-center gap-4">
-        <div class="hidden lg:flex items-center">
-          <UIcon name="i-lucide-panel-left-close" :size="20" />
-        </div>
         <h2 class="text-2xl font-bold">Nuxt Admin Dashboard 👋</h2>
       </div>
       <UInput

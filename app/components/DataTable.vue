@@ -82,13 +82,10 @@ const resetFilters = () => {
         :class="hideFilters ? 'justify-between' : ''"
       >
         <h2 class="text-xl dark:text-white my-2 font-medium">All Users</h2>
-        <UButton icon="i-lucide-plus" color="neutral" variant="subtle"
-          >Add User</UButton
-        >
       </div>
       <nav
-        class="flex flex-col sm:flex-row gap-4 items-start sm:items-end"
         v-if="!hideFilters"
+        class="w-full flex flex-col lg:flex-row gap-4 items-start lg:justify-end"
       >
         <UInput
           v-model="searchQuery"
@@ -108,11 +105,14 @@ const resetFilters = () => {
           v-if="searchQuery || statusFilter"
           variant="ghost"
           icon="i-heroicons-x-mark"
-          @click="resetFilters"
           class="whitespace-nowrap"
+          @click="resetFilters"
         >
           Clear filters
         </UButton>
+        <UButton icon="i-lucide-plus" color="neutral" variant="subtle"
+          >Add User</UButton
+        >
       </nav>
     </header>
 
