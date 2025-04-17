@@ -1,5 +1,16 @@
 <script lang="ts" setup>
 const isList = ref(false);
+
+const models = [
+  { name: 'Gemini 2.5 Pro', pricing: 'FREE', badge: true },
+  { name: 'GPT-4o', pricing: '$60.00 / 1M tokens', badge: false },
+  { name: 'Claude 3.5 Sonnet', pricing: '$3.00 / 1M tokens', badge: false },
+  { name: 'Claude 3 Opus', pricing: '$15.00 / 1M tokens', badge: false },
+  { name: 'Mistral Large', pricing: '$8.00 / 1M tokens', badge: false },
+  { name: 'Llama 3 70B', pricing: 'FREE', badge: true },
+  { name: 'Mixtral 8x7B', pricing: '$2.50 / 1M tokens', badge: false },
+  { name: 'Command R+', pricing: '$5.00 / 1M tokens', badge: false }
+];
 </script>
 <template>
   <section class="space-y-8">
@@ -30,24 +41,12 @@ const isList = ref(false);
 
     <UCard variant="subtle">
       <div class="grid gap-4" :class="isList ? 'grid-cols-1' : 'grid-cols-4'">
-        <UCard variant="subtle">
+        <UCard v-for="model in models" :key="model.name" variant="subtle">
           <template #header>
             <header class="flex items-center justify-between">
-              <h2 class="text-lg font-bold">Gemini 2.5 Pro</h2>
-              <UBadge color="primary" variant="subtle" size="sm">FREE</UBadge>
-            </header>
-          </template>
-          <template v-if="!isList" #footer>
-            <footer class="flex items-center justify-between">
-              <UButton variant="subtle" color="neutral">View</UButton>
-            </footer>
-          </template>
-        </UCard>
-        <UCard variant="subtle">
-          <template #header>
-            <header class="flex items-center justify-between">
-              <h2 class="text-lg font-bold">GPT-4o</h2>
-              <span class="text-sm">$60.00 / 1M tokens</span>
+              <h2 class="text-lg font-bold">{{ model.name }}</h2>
+              <UBadge v-if="model.badge" color="primary" variant="subtle" size="sm">{{ model.pricing }}</UBadge>
+              <span v-else class="text-sm">{{ model.pricing }}</span>
             </header>
           </template>
           <template v-if="!isList" #footer>

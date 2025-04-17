@@ -81,7 +81,7 @@ const resetFilters = () => {
         class="w-full flex items-center gap-4"
         :class="hideFilters ? 'justify-between' : ''"
       >
-        <h2 class="text-xl dark:text-white my-2 font-medium">All Users</h2>
+        <h2 class="font-medium text-lg">All Users</h2>
       </div>
       <nav
         v-if="!hideFilters"

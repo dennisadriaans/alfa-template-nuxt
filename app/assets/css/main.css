@@ -7,15 +7,14 @@
 
 :root {
   --ui-bg: oklch(100 0 0);
-  --ui-card: oklch(1 0 0);
   --ui-bg-elevated: oklch(1 0 0);
   --side-bar-width: 260px;
+  --side-bar-width-spaced: 292px;
 }
 
 .dark {
   --ui-bg: oklch(0.18 0 0);
   --ui-border: oklch(0.269 0 0);
-  --ui-card: oklch(0.225 0 0);
   --ui-bg-elevated: oklch(0.225 0 0);
 
   --vis-axis-grid-color: rgba(255, 255, 255, 0.1) !important;
