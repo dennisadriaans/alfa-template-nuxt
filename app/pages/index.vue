@@ -28,28 +28,39 @@ const items = ref(["30 days", "7 days"]);
 const value = ref("30 days");
 </script>
 <template>
-  <div class="space-y-8">
-    <div class="flex items-center justify-between mt-4 mb-8">
-      <div class="flex">
-        <h2 class="text-2xl font-bold">Nuxt Admin Dashboard 👋</h2>
+  <div class="space-y-6">
+    <div class="space-y-1">
+      <div class="flex items-center justify-between">
+        <h2 class="text-2xl font-bold">Dashboard</h2>
+        <UInput
+          v-model="searchQuery"
+          placeholder="Search..."
+          icon="i-heroicons-magnifying-glass"
+          class="w-full sm:w-64 hidden lg:block"
+        />
       </div>
-      <UInput
-        v-model="searchQuery"
-        placeholder="Search..."
-        icon="i-heroicons-magnifying-glass"
-        class="w-full sm:w-64"
-      />
+      <p class="text-(--ui-text-muted)">Monitor LLM Usage</p>
     </div>
 
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
       <UCard variant="subtle" class="col-span-1 lg:col-span-3">
         <template #header>
           <div class="flex items-center justify-between">
-            <div>
-              <h2 class="text-2xl my-2 font-bold">10,291</h2>
-              <h4 class="text-sm text-(--ui-text-muted)">
-                Total requests last 30 days
-              </h4>
+            <div class="flex gap-8">
+              <div>
+                <p class="text-xl font-medium">616</p>
+                <p class="mb-1 text-sm text-(--ui-text-muted)">Requests</p>
+              </div>
+              <div>
+                <p class="text-xl font-medium">2.1s</p>
+                <p class="mb-1 text-sm text-(--ui-text-muted)">Response Time</p>
+              </div>
+              <div>
+                <p class="text-xl font-medium">
+                  6
+                </p>
+                <p class="mb-1 text-sm text-(--ui-text-muted)">Models Used</p>
+              </div>
             </div>
             <div>
               <USelect
@@ -64,7 +75,7 @@ const value = ref("30 days");
         <LineChart
           :data="UsageData"
           :height="300"
-          :legend-position="LegendPosition.Bottom"
+          :legend-position="LegendPosition.Top"
           :categories="categories"
           :y-num-ticks="2"
           :x-formatter="(i: number): string => `${UsageData[i]?.date}`"

@@ -13,9 +13,9 @@ const models = [
 ];
 </script>
 <template>
-  <section class="space-y-8">
+  <section class="space-y-6">
     <header class="flex items-center justify-between">
-      <div>
+      <div class="space-y-1">
         <h2 class="text-2xl font-bold">Models</h2>
         <p class="text-(--ui-text-muted)">Manage your models</p>
       </div>

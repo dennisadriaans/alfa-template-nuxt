@@ -14,8 +14,12 @@
 
 .dark {
   --ui-bg: oklch(0.18 0 0);
+  --ui-text: oklch(1 0 0);
   --ui-border: oklch(0.269 0 0);
   --ui-bg-elevated: oklch(0.225 0 0);
+
+  --tooltip-label-color: rgba(255, 255, 255, 0.5);
+  --tooltip-value-color: rgba(255, 255, 255, 1);
 
   --vis-axis-grid-color: rgba(255, 255, 255, 0.1) !important;
   --vis-tooltip-background-color: #121212 !important;

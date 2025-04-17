@@ -59,8 +59,8 @@ const columns: TableColumn<User>[] = [
 </script>
 
 <template>
-  <div class="space-y-8">
-    <div>
+  <div class="space-y-6">
+    <div class="space-y-1">
       <div class="flex items-center justify-between">
         <h2 class="text-2xl font-bold">Users</h2>
         <UInput

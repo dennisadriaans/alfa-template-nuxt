@@ -31,7 +31,7 @@ const saveSettings = () => {
 </script>
 
 <template>
-  <div class="space-y-8">
+  <div class="space-y-6">
     <div>
       <div class="flex items-center justify-between">
         <h2 class="text-2xl font-bold">Settings</h2>

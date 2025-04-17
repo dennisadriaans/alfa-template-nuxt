@@ -12,10 +12,10 @@ const route = useRoute();
   <NuxtLink class="-ml-1" :to="to">
     <UButton
       color="neutral"
-      variant="ghost"
+      variant="link"
       size="lg"
-      class="w-full"
-      :class="route.path === to ? ' bg-(--ui-bg)' : 'text-(--ui-text-dimmed) hover:text-(--ui-text-muted)'"
+      class="w-full transition"
+      :class="route.path === to ? ' bg-(--ui-bg-elevated) text-neutral' : ''"
       :icon="icon"
       :ui="{
         leadingIcon: `mr-1 text-lg ${
