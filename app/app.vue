@@ -25,7 +25,7 @@ function setColorMode() {
           <h1 class="text-xl">Dashboard Alfa</h1>
         </div>
 
-        <!-- <USelect
+        <USelect
           v-model="value"
           :items="items"
           variant="subtle"
@@ -33,7 +33,7 @@ function setColorMode() {
           :trailing="true"
           size="lg"
           class="w-full"
-        /> -->
+        />
 
         <div>
           <div class="mb-2 text-sm text-(--ui-text-muted)">Menu</div>
