@@ -2,14 +2,13 @@
 @import "@nuxt/ui";
 
 @theme {
-  --font-sans: "Public Sans", sans-serif;
+  --font-sans: "Inter", sans-serif;
 }
 
 :root {
   --ui-bg: oklch(100 0 0);
   --ui-bg-elevated: oklch(1 0 0);
-  --side-bar-width: 260px;
-  --side-bar-width-spaced: 292px;
+  --side-bar-width: 312px;
 }
 
 .dark {

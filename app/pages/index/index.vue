@@ -1,9 +1,8 @@
 <script lang="ts" setup>
 import type { TableColumn } from "@nuxt/ui";
-const UBadge = resolveComponent("UBadge");
 import { UsersData, type User } from "~/data/UsersData";
 
-/* You will typically use useFetch in real life scenarios here. */
+const UBadge = resolveComponent("UBadge");
 const data = ref(UsersData);
 
 const columns: TableColumn<User>[] = [
@@ -59,21 +58,16 @@ const columns: TableColumn<User>[] = [
 </script>
 
 <template>
-  <div class="space-y-6 px-8">
-    <div class="space-y-1">
-      <div class="flex items-center justify-between">
-        <h2 class="text-2xl font-bold">Users</h2>
-        <UInput
-          v-model="searchQuery"
-          placeholder="Search..."
-          icon="i-heroicons-magnifying-glass"
-          class="hidden lg:block"
-        />
-      </div>
-      <p class="text-(--ui-text-muted)">Manage your users</p>
+  <div class="space-y-4">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+      <StatusCard variant="subtle" name="Total Sessions" :value="526" />
+      <StatusCard variant="subtle" name="Session duration" :value="'2:24'" />
+      <StatusCard variant="subtle" name="Page per session" :value="316" />
     </div>
-    <UCard variant="subtle">
-      <DataTable :data="data" :columns="columns" :page-size="20" />
-    </UCard>
+    <div>
+      <UCard>
+        <DataTable :data="data" :columns="columns" :page-size="20" />
+      </UCard>
+    </div>
   </div>
 </template>

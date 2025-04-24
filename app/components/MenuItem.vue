@@ -9,13 +9,14 @@ const route = useRoute();
 </script>
 
 <template>
-  <NuxtLink class="-ml-1" :to="to">
+  <NuxtLink class="block" :to="to">
     <UButton
       color="neutral"
       variant="link"
-      size="lg"
+      size="xl"
       class="w-full transition"
-      :class="route.path === to ? ' bg-(--ui-bg-elevated) text-neutral' : ''"
+      :active="route.path === to"
+      active-variant="soft"
       :icon="icon"
       :ui="{
         leadingIcon: `mr-1 text-lg ${

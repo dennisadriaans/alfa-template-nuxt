@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { ContributionGraphSize } from "~/components/ContributionGraph/types";
-import { contributions } from "./../../ContributionData";
+import { contributions } from "../../data/ContributionData";
 </script>
 <template>
   <div class="">
@@ -11,7 +11,7 @@ import { contributions } from "./../../ContributionData";
         class="overflow-hidden"
         :contributions="contributions"
         :size="ContributionGraphSize.lg"
-      ></ContributionGraph>
+      />
     </UCard>
   </div>
 </template>

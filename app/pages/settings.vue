@@ -39,7 +39,7 @@ const saveSettings = () => {
           v-model="searchQuery"
           placeholder="Search..."
           icon="i-heroicons-magnifying-glass"
-          class="w-full sm:w-64 hidden lg:block"
+          class="w-full hidden lg:block"
         />
       </div>
       <p class="text-(--ui-text-muted)">Manage your settings</p>

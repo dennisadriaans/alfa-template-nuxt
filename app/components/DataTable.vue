@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { TableColumn } from "@nuxt/ui";
 import { ref, computed, watchEffect } from "vue";
-import type { User } from "~/UsersData";
+import type { User } from "~/data/UsersData";
 
 const props = defineProps<{
   data: User[];
