@@ -234,7 +234,7 @@ const data: TrafficPageData[] = [
         <div class="mb-8">
           <h2 class="text-xl font-medium">Direct Traffic</h2>
         </div>
-        <LineChart
+        <AreaChart
           :data="trafficData"
           :height="275"
           y-label="Visitors"
