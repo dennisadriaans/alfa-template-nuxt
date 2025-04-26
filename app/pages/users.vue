@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import type { TableColumn } from "@nuxt/ui";
-const UBadge = resolveComponent("UBadge");
 import { UsersData, type User } from "~/data/UsersData";
+const UBadge = resolveComponent("UBadge");
 
 /* You will typically use useFetch in real life scenarios here. */
 const data = ref(UsersData);

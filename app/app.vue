@@ -37,45 +37,53 @@ function setColorMode() {
 
         <div class="space-y-8">
           <div class="space-y-1">
-          <div
-            class="mb-2 text-xs font-bold tracking-wide text-(--ui-text-dimmed) uppercase"
-          >
-            Overview
+            <div
+              class="mb-2 text-xs font-bold tracking-wide text-(--ui-text-dimmed) uppercase"
+            >
+              Overview
+            </div>
+            <MenuItem
+              to="/home"
+              icon="i-lucide-layout-dashboard"
+              label="Home"
+            />
+            <MenuItem to="/" icon="i-lucide-house" label="Dashboard" />
+            <MenuItem to="/users" icon="i-lucide-users" label="Users" />
+            <MenuItem to="/models" icon="i-lucide-share-2" label="Models" />
           </div>
-          <MenuItem to="/home" icon="i-lucide-layout-dashboard" label="Home" />
-          <MenuItem to="/" icon="i-lucide-house" label="Dashboard" />
-          <MenuItem to="/users" icon="i-lucide-users" label="Users" />
-          <MenuItem to="/models" icon="i-lucide-share-2" label="Models" />
-        </div>
 
-        <div class="space-y-1">
-          <div
-            class="mb-2 text-xs font-bold tracking-wide text-(--ui-text-dimmed) uppercase"
-          >
-            Actions
+          <div class="space-y-1">
+            <div
+              class="mb-2 text-xs font-bold tracking-wide text-(--ui-text-dimmed) uppercase"
+            >
+              Actions
+            </div>
+            <MenuItem
+              to="/home"
+              icon="i-lucide-layout-dashboard"
+              label="Reports"
+            />
+            <MenuItem to="/users" icon="i-lucide-users" label="Tasks" />
+            <MenuItem to="/models" icon="i-lucide-share-2" label="Exports" />
           </div>
-          <MenuItem
-            to="/home"
-            icon="i-lucide-layout-dashboard"
-            label="Reports"
-          />
-          <MenuItem to="/users" icon="i-lucide-users" label="Tasks" />
-          <MenuItem to="/models" icon="i-lucide-share-2" label="Exports" />
-        </div>
-        
-        <div class="space-y-1">
-          <div
-            class="mb-2 text-xs font-bold tracking-wide text-(--ui-text-dimmed) uppercase"
-          >
-            Accounts
-          </div>
-          <div>
-            <div class="flex gap-2 px-3 py-2">
-              <img class="w-5" src="/analytics.svg" alt="">
-              <div class="text-(--ui-text-muted) hover:text-(--ui-text) font-medium">Google Analytics</div>
+
+          <div class="space-y-1">
+            <div
+              class="mb-2 text-xs font-bold tracking-wide text-(--ui-text-dimmed) uppercase"
+            >
+              Accounts
+            </div>
+            <div>
+              <div class="flex gap-2 px-3 py-2">
+                <img class="w-5" src="/analytics.svg" alt="" />
+                <div
+                  class="text-(--ui-text-muted) hover:text-(--ui-text) font-medium"
+                >
+                  Google Analytics
+                </div>
+              </div>
             </div>
           </div>
-        </div>
         </div>
 
         <div class="absolute left-0 bottom-0 p-4 w-full space-y-8">

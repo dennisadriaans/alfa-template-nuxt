@@ -45,8 +45,8 @@ importers:
         specifier: ^3.16.2
         version: 3.16.2(@netlify/blobs@8.2.0)(@parcel/watcher@2.5.1)(@types/node@22.14.1)(better-sqlite3@11.9.1)(db0@0.3.1(better-sqlite3@11.9.1))(eslint@9.24.0(jiti@2.4.2))(ioredis@5.6.1)(lightningcss@1.29.2)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.40.0)(terser@5.39.0)(typescript@5.8.3)(vite@6.3.1(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))(yaml@2.7.1)
       nuxt-charts:
-        specifier: 0.1.0-beta.7
-        version: 0.1.0-beta.7(@unovis/ts@1.5.1)(magicast@0.3.5)(vue@3.5.13(typescript@5.8.3))
+        specifier: 0.1.3
+        version: 0.1.3(@unovis/ts@1.5.1)(magicast@0.3.5)(vue@3.5.13(typescript@5.8.3))
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
@@ -652,8 +652,8 @@ packages:
     resolution: {integrity: sha512-xeO57FpIu4p1Ri3Jq/EXq4ClRm86dVF2z/+kvFnyqVYRavTZmaFaUBbWCOuuTh0o/g7DSsk6kc2vrS4Vl5oPOQ==}
     engines: {node: '>=18.18'}
 
-  '@iconify/collections@1.0.538':
-    resolution: {integrity: sha512-meO8bIZ92EQsMfJFNak0XFXf/Hitpd1+omkIPBLpLQ5UBj9Shkq8EyFqJZgl3cG1onwA7hjTEdSFmwDEKAQLiw==}
+  '@iconify/collections@1.0.539':
+    resolution: {integrity: sha512-b/1gNbYIPmesMyMvOepV6iASuCbm0pIg28uy418gxHvKrXqIto3LoUBUpxrj4cRzfAntjzekcE/Vo7g2xkW7Ew==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -774,8 +774,8 @@ packages:
     resolution: {integrity: sha512-OAs1xG+FfLX0LoRASpqzVntVV/RpYkgpI0VrUnw2u0Q1qiZUzcPffxRK8HF3gc4GjuhG5ahOEMJ9bswBiZPq0g==}
     engines: {node: ^14.16.0 || >=16.0.0}
 
-  '@netlify/open-api@2.36.0':
-    resolution: {integrity: sha512-cxdjUkHh0/SLvPusCFOmIoKpXdfvom+cpBT/bUrP2oxxH1htWgJ59GGuu/pJGEU+xhKpPotr+TSJl00u7ktIhg==}
+  '@netlify/open-api@2.37.0':
+    resolution: {integrity: sha512-zXnRFkxgNsalSgU8/vwTWnav3R+8KG8SsqHxqaoJdjjJtnZR7wo3f+qqu4z+WtZ/4V7fly91HFUwZ6Uz2OdW7w==}
     engines: {node: '>=14.8.0'}
 
   '@netlify/serverless-functions-api@1.33.0':
@@ -4533,8 +4533,8 @@ packages:
   nth-check@2.1.1:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
 
-  nuxt-charts@0.1.0-beta.7:
-    resolution: {integrity: sha512-3Tquing68aj3QUu64gbN/vG1yu/Lqo/FL/iP8ms0bKW/FYIXrTo8jATDuXWBDn9I8dENwZnHEO4pclBqKkvOpA==}
+  nuxt-charts@0.1.3:
+    resolution: {integrity: sha512-1oUusgt4x1QqczQDVfNSjf6S861mcUIoZNhB+qHIdj9d58hI0RKVMmCzP3KSq74hVDq4ElSLGNVGee942rpQVg==}
 
   nuxt-component-meta@0.10.1:
     resolution: {integrity: sha512-+e01YjZ9hojroO88dvqiOs/Yh4ff/kbXYcfj70l8KhMpmXITz2GBffT9HqwzFdcTm7iE2C422alG42p7yir2nA==}
@@ -6039,8 +6039,8 @@ packages:
   vue-bundle-renderer@2.1.1:
     resolution: {integrity: sha512-+qALLI5cQncuetYOXp4yScwYvqh8c6SMXee3B+M7oTZxOgtESP0l4j/fXdEJoZ+EdMxkGWIj+aSEyjXkOdmd7g==}
 
-  vue-chrts@0.1.0:
-    resolution: {integrity: sha512-G/WKWK/TAhHwuAs9tioW55TJxy0nxw1wvQmiCrS7XsW/lgMyXqI/zOXeKtferCKeW3XNg7Syk3t/0GbYyy21wg==}
+  vue-chrts@0.1.3:
+    resolution: {integrity: sha512-wqq47a15Dxr906FUhQXGlxV7RKsZlMsOEWF25vh/2OmvtB8hRu1TwEOkBUBRrpSDS92EFPLDv19VL0QEU98ETw==}
     peerDependencies:
       vue: ^3.5.13
 
@@ -6827,7 +6827,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.2': {}
 
-  '@iconify/collections@1.0.538':
+  '@iconify/collections@1.0.539':
     dependencies:
       '@iconify/types': 2.0.0
 
@@ -7002,7 +7002,7 @@ snapshots:
 
   '@netlify/node-cookies@0.1.0': {}
 
-  '@netlify/open-api@2.36.0': {}
+  '@netlify/open-api@2.37.0': {}
 
   '@netlify/serverless-functions-api@1.33.0':
     dependencies:
@@ -7333,7 +7333,7 @@ snapshots:
 
   '@nuxt/icon@1.12.0(magicast@0.3.5)(vite@6.3.1(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))(vue@3.5.13(typescript@5.8.3))':
     dependencies:
-      '@iconify/collections': 1.0.538
+      '@iconify/collections': 1.0.539
       '@iconify/types': 2.0.0
       '@iconify/utils': 2.3.0
       '@iconify/vue': 4.3.0(vue@3.5.13(typescript@5.8.3))
@@ -11543,7 +11543,7 @@ snapshots:
 
   netlify@13.3.4:
     dependencies:
-      '@netlify/open-api': 2.36.0
+      '@netlify/open-api': 2.37.0
       lodash-es: 4.17.21
       micro-api-client: 3.3.0
       node-fetch: 3.3.2
@@ -11734,11 +11734,11 @@ snapshots:
     dependencies:
       boolbase: 1.0.0
 
-  nuxt-charts@0.1.0-beta.7(@unovis/ts@1.5.1)(magicast@0.3.5)(vue@3.5.13(typescript@5.8.3)):
+  nuxt-charts@0.1.3(@unovis/ts@1.5.1)(magicast@0.3.5)(vue@3.5.13(typescript@5.8.3)):
     dependencies:
       '@nuxt/kit': 3.16.2(magicast@0.3.5)
       '@unovis/vue': 1.5.1(@unovis/ts@1.5.1)(vue@3.5.13(typescript@5.8.3))
-      vue-chrts: 0.1.0(vue@3.5.13(typescript@5.8.3))
+      vue-chrts: 0.1.3(vue@3.5.13(typescript@5.8.3))
     transitivePeerDependencies:
       - '@unovis/ts'
       - magicast
@@ -13558,7 +13558,7 @@ snapshots:
     dependencies:
       ufo: 1.6.1
 
-  vue-chrts@0.1.0(vue@3.5.13(typescript@5.8.3)):
+  vue-chrts@0.1.3(vue@3.5.13(typescript@5.8.3)):
     dependencies:
       vue: 3.5.13(typescript@5.8.3)
 
