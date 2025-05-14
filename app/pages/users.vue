@@ -66,7 +66,7 @@ const columns: TableColumn<User>[] = [
         <UInput
           v-model="searchQuery"
           placeholder="Search..."
-          icon="i-heroicons-magnifying-glass"
+          icon="i-lucide-search"
           class="hidden lg:block"
         />
       </div>

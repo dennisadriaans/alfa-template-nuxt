@@ -7,7 +7,7 @@ interface Email {
   date: string;
   subject: string;
   sender: string;
-  status: 'unread' | 'read' | 'flagged' | 'archived';
+  status: "unread" | "read" | "flagged" | "archived";
   hasAttachment: boolean;
   size: string;
 }
@@ -21,7 +21,7 @@ const data = ref<Email[]>([
     sender: "manager@company.com",
     status: "unread",
     hasAttachment: true,
-    size: "2.4MB"
+    size: "2.4MB",
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ const data = ref<Email[]>([
     sender: "pm@company.com",
     status: "read",
     hasAttachment: true,
-    size: "1.1MB"
+    size: "1.1MB",
   },
   {
     id: 3,
@@ -39,7 +39,7 @@ const data = ref<Email[]>([
     sender: "design@company.com",
     status: "flagged",
     hasAttachment: true,
-    size: "8.7MB"
+    size: "8.7MB",
   },
   {
     id: 4,
@@ -48,7 +48,7 @@ const data = ref<Email[]>([
     sender: "newsletter@company.com",
     status: "read",
     hasAttachment: false,
-    size: "0.3MB"
+    size: "0.3MB",
   },
   {
     id: 5,
@@ -57,16 +57,16 @@ const data = ref<Email[]>([
     sender: "billing@service.com",
     status: "archived",
     hasAttachment: true,
-    size: "0.5MB"
+    size: "0.5MB",
   },
   {
-    id: 6, 
+    id: 6,
     date: "2025-04-14T09:10:00Z",
     subject: "Security Alert: Password Changed",
     sender: "security@service.com",
     status: "read",
     hasAttachment: false,
-    size: "0.1MB"
+    size: "0.1MB",
   },
   {
     id: 7,
@@ -75,7 +75,7 @@ const data = ref<Email[]>([
     sender: "hr@company.com",
     status: "unread",
     hasAttachment: false,
-    size: "0.2MB"
+    size: "0.2MB",
   },
   {
     id: 8,
@@ -84,17 +84,17 @@ const data = ref<Email[]>([
     sender: "dev@company.com",
     status: "flagged",
     hasAttachment: true,
-    size: "3.5MB"
-  }
+    size: "3.5MB",
+  },
 ]);
 
-const searchQuery = ref('');
+const searchQuery = ref("");
 
 const statusColorMap = {
-  unread: 'blue',
-  read: 'gray',
-  flagged: 'red',
-  archived: 'green'
+  unread: "blue",
+  read: "gray",
+  flagged: "red",
+  archived: "green",
 };
 
 const columns: TableColumn<Email>[] = [
@@ -129,12 +129,8 @@ const columns: TableColumn<Email>[] = [
     header: "Status",
     cell: ({ row }) => {
       const status = row.getValue("status");
-      const color = statusColorMap[status] || 'gray';
-      return h(
-        UBadge,
-        { color, variant: "subtle" },
-        { default: () => status }
-      );
+      const color = statusColorMap[status] || "gray";
+      return h(UBadge, { color, variant: "subtle" }, { default: () => status });
     },
   },
   {
@@ -142,7 +138,9 @@ const columns: TableColumn<Email>[] = [
     header: "Attachment",
     cell: ({ row }) => {
       const hasAttachment = row.getValue("hasAttachment");
-      return hasAttachment ? h("UIcon", { name: "i-lucide-paperclip", class: "text-gray-500" }) : "";
+      return hasAttachment
+        ? h("UIcon", { name: "i-lucide-paperclip", class: "text-gray-500" })
+        : "";
     },
   },
   {
@@ -164,7 +162,7 @@ const columns: TableColumn<Email>[] = [
         <UInput
           v-model="searchQuery"
           placeholder="Search emails..."
-          icon="i-heroicons-magnifying-glass"
+          icon="i-lucide-search"
           class="w-full hidden lg:block"
         />
       </div>
@@ -172,12 +170,18 @@ const columns: TableColumn<Email>[] = [
     </div>
     <UCard variant="subtle">
       <div class="flex items-center gap-2 mb-4">
-        <UButton size="sm" color="gray" icon="i-lucide-archive">Archive</UButton>
+        <UButton size="sm" color="gray" icon="i-lucide-archive"
+          >Archive</UButton
+        >
         <UButton size="sm" color="gray" icon="i-lucide-flag">Flag</UButton>
         <UButton size="sm" color="gray" icon="i-lucide-trash-2">Delete</UButton>
-        <UButton size="sm" color="gray" icon="i-lucide-mail-check">Mark as Read</UButton>
+        <UButton size="sm" color="gray" icon="i-lucide-mail-check"
+          >Mark as Read</UButton
+        >
         <div class="flex-1"></div>
-        <UButton size="sm" color="primary" icon="i-lucide-mail-plus">Compose</UButton>
+        <UButton size="sm" color="primary" icon="i-lucide-mail-plus"
+          >Compose</UButton
+        >
       </div>
       <DataTable :data="data" :columns="columns" :page-size="20" />
     </UCard>

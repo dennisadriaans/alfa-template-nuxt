@@ -90,7 +90,7 @@ const resetFilters = () => {
         <UInput
           v-model="searchQuery"
           placeholder="Search..."
-          icon="i-heroicons-magnifying-glass"
+          icon="i-lucide-search"
           class="w-full sm:w-64"
         />
 
@@ -104,7 +104,7 @@ const resetFilters = () => {
         <UButton
           v-if="searchQuery || statusFilter"
           variant="ghost"
-          icon="i-heroicons-x-mark"
+          icon="i-lucide-x-mark"
           class="whitespace-nowrap"
           @click="resetFilters"
         >

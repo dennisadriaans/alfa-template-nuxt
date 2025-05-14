@@ -1,43 +1,34 @@
 <script lang="ts" setup>
+import { UsageData, ClaudeData, GeminiData, OpenAIData } from "~/data/LLMData";
+
 const route = useRoute();
+
+const categories: Record<string, BulletLegendItemInterface> = {
+  "Sonnet 3.7": { name: "Sonnet 3.7" },
+  "GPT-4o": { name: "GPT-4o" },
+  "Gemini 2.5 Pro": { name: "Gemini 2.5 Pro" },
+};
+
+const LLMFields = {
+  total_tokens: { name: "Tokens" },
+};
+
+function formatDate(timestamp) {
+  const options = {
+    month: "short",
+    day: "numeric",
+  };
+
+  const date = new Date(timestamp);
+  const formattedDate = new Intl.DateTimeFormat("en-US", options).format(date);
+
+  return `${formattedDate}`;
+}
 </script>
 <template>
   <div class="space-y-6 px-8">
     <div class="space-y-6">
       <h2 class="text-2xl font-bold">Dashboard</h2>
-      <div
-        class="inline-flex items-center justify-start border border-(--ui-border) rounded-lg"
-      >
-        <NuxtLink to="/">
-          <UButton
-            :active="route.path === '/'"
-            active-variant="soft"
-            size="lg"
-            variant="link"
-            color="neutral"
-            >All sessions</UButton
-          >
-        </NuxtLink>
-        <NuxtLink to="/traffic">
-          <UButton
-            :active="route.path === '/traffic'"
-            active-variant="soft"
-            size="lg"
-            variant="link"
-            color="neutral"
-            >Direct traffic</UButton
-          >
-        </NuxtLink>
-
-        <UButton size="lg" variant="link" color="neutral"
-          >Organic traffic</UButton
-        >
-        <UButton size="lg" variant="link" color="neutral">Paid traffic</UButton>
-        <UButton size="lg" variant="link" color="neutral">Mobile users</UButton>
-        <UButton size="lg" variant="link" color="neutral"
-          >Returning users</UButton
-        >
-      </div>
     </div>
 
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">

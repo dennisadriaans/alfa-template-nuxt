@@ -38,7 +38,7 @@ const saveSettings = () => {
         <UInput
           v-model="searchQuery"
           placeholder="Search..."
-          icon="i-heroicons-magnifying-glass"
+          icon="i-lucide-search"
           class="w-full hidden lg:block"
         />
       </div>
@@ -52,19 +52,34 @@ const saveSettings = () => {
           <div class="w-1/2 pt-2 font-medium">Theme</div>
           <div class="flex-1">
             <UButtonGroup v-model="theme" class="w-full sm:w-auto">
-              <UButton value="light" color="neutral" variant="subtle" @click="changeTheme('light')">
+              <UButton
+                value="light"
+                color="neutral"
+                variant="subtle"
+                @click="changeTheme('light')"
+              >
                 <template #leading>
                   <UIcon name="i-lucide-sun" />
                 </template>
                 Light
               </UButton>
-              <UButton value="dark" color="neutral" variant="subtle" @click="changeTheme('dark')">
+              <UButton
+                value="dark"
+                color="neutral"
+                variant="subtle"
+                @click="changeTheme('dark')"
+              >
                 <template #leading>
                   <UIcon name="i-lucide-moon" />
                 </template>
                 Dark
               </UButton>
-              <UButton value="system" color="neutral" variant="subtle" @click="changeTheme('system')">
+              <UButton
+                value="system"
+                color="neutral"
+                variant="subtle"
+                @click="changeTheme('system')"
+              >
                 <template #leading>
                   <UIcon name="i-lucide-computer" />
                 </template>
